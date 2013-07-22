@@ -24,6 +24,22 @@ class StepsController < ApplicationController
 		end
 	end
 
+	def edit
+		if @step.update_attributes(params[:ticket])
+			flash[:notice] = "Step has been updated."
+			redirect_to [@instructionguide, @step]
+		else
+			flash[:alert] = "Step has not been updated."
+			render :action => "edit"
+		end
+	end
+
+	def destroy
+		@step.destroy
+		flash[:notice] = "Step has been deleted."
+		redirect_to @instructionguide
+	end
+
 	private
 	def find_instructionguide
 		@instructionguide = Instructionguide.find(params[:instructionguide_id])
