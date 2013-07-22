@@ -7,7 +7,7 @@
 <ul id='steps'>
   <% @instructionguide.steps.each do |step| %>
     <li>
-      #<%= step.id %> -
+      #<%= step.order %> -
       <%= link_to step.title, [@instructionguide, step] %>
     </li>
    <% end %>

@@ -10,7 +10,7 @@ feature 'Updating Steps for an Instruction Guide' do
 		click_link "Bake bread"
 		click_link "Edit Step"
 		fill_in "step_title", :with => "Buy some bread"
-		click_button "Edit Step"
+		click_button "Update Step"
 		page.should have_content ("Step has been updated.")
 		page.should have_content("Buy some bread")
 		page.should_not have_content ("Bake bread")

@@ -6,7 +6,7 @@ class StepsController < ApplicationController
 	end
 
 	def index
-		@steps = @instructionguide.steps.all
+		@steps = @instructionguide.steps.order("order asc")
 	end
 
 	def show
@@ -25,7 +25,11 @@ class StepsController < ApplicationController
 	end
 
 	def edit
-		if @step.update_attributes(params[:ticket])
+
+	end
+
+	def update
+		if @step.update_attributes(params[:step])
 			flash[:notice] = "Step has been updated."
 			redirect_to [@instructionguide, @step]
 		else
@@ -33,7 +37,6 @@ class StepsController < ApplicationController
 			render :action => "edit"
 		end
 	end
-
 	def destroy
 		@step.destroy
 		flash[:notice] = "Step has been deleted."

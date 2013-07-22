@@ -1,4 +1,6 @@
- <h2><%= @step.title %></h2>
+<h2><%= @step.title %></h2>
+<br>
+<p>step # <%= @step.order %></p>
 <%= link_to "Edit Step", [:edit, @instructionguide, @step] %>
 <%= link_to "Delete Step", [@instructionguide, @step], :method => :delete, :confirm => "Are you sure you want to delete this step?" %>
-<%= @step.order %>
+
