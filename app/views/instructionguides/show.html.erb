@@ -2,6 +2,8 @@
 
 <%= link_to "New Step", new_instructionguide_step_path(@instructionguide) %>
 
+<h2>Steps</h2>
+
 <ul id='steps'>
   <% @instructionguide.steps.each do |step| %>
     <li>

@@ -1,0 +1,13 @@
+<%= form_for [@instructionguide, @step] do |f| %>
+
+  <p>
+    <%= f.label :title %><br>
+      
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :order %><br>
+    <%= f.text_field :order %>
+  </p>
+  <%= f.submit %>
+<% end %>
