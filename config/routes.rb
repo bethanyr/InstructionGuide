@@ -1,6 +1,8 @@
 InstructionGuide::Application.routes.draw do
   root :to => "instructionguides#index"
-  resources :instructionguides 
+  resources :instructionguides do
+    resources :steps
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

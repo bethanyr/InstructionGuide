@@ -1,0 +1,10 @@
+
+
+<h2>Instruction Guides</h2>
+<ul>
+	<% @instructionguides.each do |instructionguide| %>
+	  <li><%= link_to instructionguide.name, instructionguide %> </li>
+	<% end %>
+</ul>
+
+<%= link_to "New Instruction Guide", new_instructionguide_path %>

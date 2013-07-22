@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130718210906) do
+ActiveRecord::Schema.define(:version => 20130722034615) do
 
   create_table "instructionguides", :force => true do |t|
     t.string   "name"
@@ -20,5 +20,30 @@ ActiveRecord::Schema.define(:version => 20130718210906) do
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  create_table "steps", :force => true do |t|
+    t.string   "title"
+    t.integer  "order"
+    t.integer  "instructionguide_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  add_index "steps", ["instructionguide_id"], :name => "index_steps_on_instructionguide_id"
+
+  create_table "tickets", :force => true do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "rails"
+    t.string   "generate"
+    t.string   "model"
+    t.string   "step"
+    t.integer  "order"
+    t.integer  "instructionguide_id"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  add_index "tickets", ["instructionguide_id"], :name => "index_tickets_on_instructionguide_id"
 
 end
