@@ -1,0 +1,60 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/bethanyr/examples/InstructionGuide/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/home/bethanyr/examples/InstructionGuide/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/bethanyr/examples/InstructionGuide/app/helpers/instructionguides_helper.rb": [
+        1,
+        null
+      ],
+      "/home/bethanyr/examples/InstructionGuide/app/controllers/instructionguides_controller.rb": [
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        0,
+        null,
+        0,
+        null,
+        null
+      ],
+      "/home/bethanyr/examples/InstructionGuide/app/models/instructionguide.rb": [
+        1,
+        1,
+        null
+      ]
+    },
+    "timestamp": 1374462557
+  }
+}

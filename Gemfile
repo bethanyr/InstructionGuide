@@ -19,6 +19,15 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+group :test, :development do
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'factory_girl'
+  gem 'simplecov', :require => false
+end
 
 gem 'jquery-rails'
 
