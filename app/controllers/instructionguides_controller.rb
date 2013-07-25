@@ -22,6 +22,13 @@ before_filter :find_instructionguide, :only => [:show, :edit, :update, :destroy]
 	def show
 
 	end
+
+	def destroy
+		@instructionguide.destroy
+		flash[:notice] = "Guide has been deleted."
+		redirect_to root_path
+	end
+
 	private
 	  def find_instructionguide
 	  	@instructionguide = Instructionguide.find(params[:id])
