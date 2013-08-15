@@ -1,28 +1,28 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/bethanyr/examples/InstructionGuide/app/controllers/application_controller.rb": [
+      "/home/danielle/code_fellows/peer_review/bethanyr/InstructionGuide/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/home/bethanyr/examples/InstructionGuide/app/helpers/application_helper.rb": [
+      "/home/danielle/code_fellows/peer_review/bethanyr/InstructionGuide/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/bethanyr/examples/InstructionGuide/app/helpers/instructionguides_helper.rb": [
+      "/home/danielle/code_fellows/peer_review/bethanyr/InstructionGuide/app/helpers/instructionguides_helper.rb": [
         1,
         null
       ],
-      "/home/bethanyr/examples/InstructionGuide/app/helpers/steps_helper.rb": [
+      "/home/danielle/code_fellows/peer_review/bethanyr/InstructionGuide/app/helpers/steps_helper.rb": [
         1,
         null
       ],
-      "/home/bethanyr/examples/InstructionGuide/app/controllers/instructionguides_controller.rb": [
+      "/home/danielle/code_fellows/peer_review/bethanyr/InstructionGuide/app/controllers/instructionguides_controller.rb": [
         1,
         1,
         1,
-        6,
+        8,
         null,
         null,
         1,
@@ -43,9 +43,16 @@
         1,
         null,
         null,
+        null,
         1,
         1,
-        7,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        9,
         null,
         0,
         null,
@@ -53,13 +60,13 @@
         null,
         null
       ],
-      "/home/bethanyr/examples/InstructionGuide/app/models/instructionguide.rb": [
+      "/home/danielle/code_fellows/peer_review/bethanyr/InstructionGuide/app/models/instructionguide.rb": [
         1,
         1,
         1,
         null
       ],
-      "/home/bethanyr/examples/InstructionGuide/app/controllers/steps_controller.rb": [
+      "/home/danielle/code_fellows/peer_review/bethanyr/InstructionGuide/app/controllers/steps_controller.rb": [
         1,
         1,
         1,
@@ -114,19 +121,19 @@
         null,
         null
       ],
-      "/home/bethanyr/examples/InstructionGuide/app/models/step.rb": [
+      "/home/danielle/code_fellows/peer_review/bethanyr/InstructionGuide/app/models/step.rb": [
         1,
         1,
         1,
         null
       ],
-      "/home/bethanyr/examples/InstructionGuide/app/models/ticket.rb": [
+      "/home/danielle/code_fellows/peer_review/bethanyr/InstructionGuide/app/models/ticket.rb": [
         1,
         1,
         1,
         null
       ]
     },
-    "timestamp": 1374508576
+    "timestamp": 1374792852
   }
 }
